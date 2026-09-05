@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Vite & Culeca - Comércio Geral e Prestação de Serviços, Lda. Soluções em comércio, importação e exportação, tecnologia, segurança eletrónica, EPI, design, mobiliário e imobiliário em Angola.">
+<meta name="theme-color" content="#0756a5">
+<title>Vite & Culeca | Soluções que fazem o seu negócio avançar</title>
+<style>
+:root{--blue:#0756a5;--blue2:#13a8d8;--green:#159447;--yellow:#f4c400;--ink:#10243b;--muted:#64758a;--bg:#f5f9fd;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}.container{max-width:1180px;margin:auto;padding:0 22px}
+header{position:sticky;top:0;z-index:50;background:#ffffffee;backdrop-filter:blur(12px);box-shadow:0 2px 18px #10243b14}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand img{width:165px;height:55px;object-fit:contain;display:block}
+nav{display:flex;gap:24px;font-weight:800;font-size:.94rem}nav a:hover{color:var(--blue)}
+.menu{display:none;border:0;background:none;font-size:28px;color:var(--blue)}
+.hero{overflow:hidden;background:radial-gradient(circle at 85% 15%,#27b7df55,transparent 28%),linear-gradient(135deg,#063f82,#0756a5 52%,#159447);color:#fff;padding:86px 0 72px;position:relative}
+.hero:after{content:"";position:absolute;width:300px;height:300px;border:50px solid #f4c40033;border-radius:50%;right:-120px;bottom:-150px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center}.eyebrow{display:inline-block;background:var(--yellow);color:#172b40;font-weight:900;padding:7px 14px;border-radius:999px;font-size:.82rem}
+h1{font-size:clamp(2.5rem,5vw,4.8rem);line-height:1.02;margin:18px 0}.hero p{font-size:1.13rem;max-width:680px;color:#eef8ff}.actions{margin-top:25px}.btn{display:inline-flex;padding:13px 19px;border-radius:10px;font-weight:900;margin:5px 8px 5px 0}.primary{background:var(--yellow);color:#172b40}.secondary{background:#fff;color:var(--blue)}
+.hero-panel{background:#fff;color:var(--ink);border-radius:24px;padding:27px;box-shadow:0 25px 65px #001b4038}.hero-panel img{width:100%;height:150px;object-fit:contain}.hero-panel strong{font-size:1.3rem;color:var(--blue)}
+section{padding:78px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 42px}.section-head h2{font-size:2.45rem;line-height:1.1;margin:0 0 10px}.section-head p{color:var(--muted)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about-art{background:linear-gradient(145deg,#e9f6ff,#effaf3);border-radius:28px;padding:30px;min-height:300px;display:grid;place-items:center}.about-art svg{width:85%;max-width:430px}
+.feature{border-left:5px solid var(--yellow);padding-left:18px}.feature h2{font-size:2.2rem;line-height:1.15}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.check{padding:13px 15px;border-radius:12px;background:var(--bg);font-weight:700}.check b{color:var(--green)}
+.services{background:var(--bg)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid #e3ebf3;border-radius:20px;overflow:hidden;transition:.25s;box-shadow:0 8px 28px #10243b0d}.card:hover{transform:translateY(-7px);box-shadow:0 18px 40px #10243b18}.visual{height:175px;background:linear-gradient(135deg,#e8f5ff,#effbf3);display:grid;place-items:center}.visual svg{width:150px;height:125px}.card-body{padding:23px}.card h3{margin:0 0 8px;color:var(--blue);font-size:1.25rem}.card p{margin:0;color:#5e7083}
+.cta{background:linear-gradient(135deg,#10243b,#0756a5);color:#fff}.cta-box{display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px}.cta h2{font-size:2.4rem;line-height:1.1;margin:0 0 8px}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.contact-card{padding:25px;border-radius:18px;background:var(--bg);border:1px solid #e1eaf2}.contact-card h3{margin:0 0 8px;color:var(--blue)}.contact-card a{color:var(--blue);font-weight:800}
+footer{background:#071522;color:#cbd7e3;padding:30px 0;text-align:center}.footer-brand{font-weight:900;color:#fff}.footer-brand span{color:var(--yellow)}
+.float-wa{position:fixed;right:19px;bottom:19px;width:58px;height:58px;border-radius:50%;background:#159447;color:#fff;display:grid;place-items:center;font-size:28px;font-weight:900;box-shadow:0 8px 28px #0004;z-index:60}
+@media(max-width:850px){nav{display:none}.menu{display:block}.hero-grid,.about,.cta-box{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr}.hero{padding-top:58px}.hero-panel{max-width:520px}.checks{grid-template-columns:1fr}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.brand img{width:145px}}
+</style>
+</head>
+<body>
+<header><div class="container nav"><a class="brand" href="#inicio"><img src="assets/logo.jpg" alt="Vite & Culeca"></a><button class="menu" onclick="toggleMenu()" aria-label="Abrir menu">☰</button><nav id="nav"><a href="#inicio">Início</a><a href="#empresa">Empresa</a><a href="#servicos">Serviços</a><a href="#contacto">Contacto</a></nav></div></header>
+
+<main>
+<section class="hero" id="inicio"><div class="container hero-grid">
+<div><span class="eyebrow">ANGOLA • LUANDA • VILA DE VIANA</span><h1>Soluções que fazem o seu negócio avançar.</h1><p><b>VITE & CULECA - COMÉRCIO GERAL E PRESTAÇÃO DE SERVIÇOS, LDA</b> — soluções comerciais, tecnológicas e operacionais para empresas e particulares.</p><div class="actions"><a class="btn primary" href="#servicos">Explorar serviços</a><a class="btn secondary" href="https://wa.me/244938330653?text=Olá%20Vite%20%26%20Culeca!%20Gostaria%20de%20solicitar%20informações." target="_blank">Falar no WhatsApp</a></div></div>
+<div class="hero-panel"><img src="assets/logo.jpg" alt="Logotipo Vite & Culeca"><strong>Comércio • Serviços • Tecnologia</strong><p>NIF: <b>5002660180</b><br>Vila de Viana, Rua 11 de Novembro<br>Luanda, Angola</p></div>
+</div></section>
+
+<section id="empresa"><div class="container about">
+<div class="about-art">
+<svg viewBox="0 0 500 330" role="img" aria-label="Ilustração de soluções empresariais"><rect x="45" y="65" width="410" height="210" rx="22" fill="#0756a5"/><rect x="75" y="95" width="350" height="150" rx="12" fill="#fff"/><circle cx="125" cy="135" r="20" fill="#f4c400"/><rect x="165" y="120" width="190" height="14" rx="7" fill="#159447"/><rect x="105" y="175" width="100" height="35" rx="8" fill="#13a8d8"/><rect x="225" y="175" width="100" height="35" rx="8" fill="#e9f3fa"/><path d="M55 295h390" stroke="#f4c400" stroke-width="12" stroke-linecap="round"/></svg>
+</div>
+<div><div class="feature"><h2>Uma empresa. Várias soluções.</h2><p>Unimos comércio geral e prestação de serviços para ajudar clientes a encontrar soluções práticas, profissionais e adequadas às suas necessidades.</p></div><div class="checks"><div class="check"><b>✓</b> Atendimento profissional</div><div class="check"><b>✓</b> Soluções integradas</div><div class="check"><b>✓</b> Flexibilidade</div><div class="check"><b>✓</b> Foco em qualidade</div></div></div>
+</div></section>
+
+<section class="services" id="servicos"><div class="container"><div class="section-head"><h2>O que fazemos</h2><p>Conheça as principais áreas de atuação da Vite & Culeca.</p></div><div class="grid">
+
+<!-- 1 -->
+<article class="card"><div class="visual"><svg viewBox="0 0 180 140"><rect x="20" y="45" width="140" height="70" rx="10" fill="#0756a5"/><path d="M35 45V25h110v20M45 72h90M45 91h65" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/><circle cx="135" cy="93" r="12" fill="#f4c400"/></svg></div><div class="card-body"><h3>Comércio Geral</h3><p>Venda e intermediação de produtos, materiais e soluções para empresas e particulares.</p></div></article>
+
+<!-- 2 -->
+<article class="card"><div class="visual"><svg viewBox="0 0 180 140"><path d="M20 85h55V45h85v65H20z" fill="#159447"/><path d="M75 45V25h35l15 20M45 85h25M100 65h35M100 88h35" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/><path d="M35 65h20" stroke="#f4c400" stroke-width="10"/></svg></div><div class="card-body"><h3>Importação & Exportação</h3><p>Intermediação e apoio em operações de comércio internacional e movimentação de mercadorias.</p></div></article>
+
+<!-- 3 -->
+<article class="card"><div class="visual"><svg viewBox="0 0 180 140"><rect x="35" y="25" width="110" height="78" rx="10" fill="#0756a5"/><rect x="47" y="37" width="86" height="50" rx="5" fill="#e8f7ff"/><circle cx="90" cy="62" r="17" fill="#13a8d8"/><path d="M65 118h50M75 103v15M105 103v15" stroke="#159447" stroke-width="9" stroke-linecap="round"/></svg></div><div class="card-body"><h3>Tecnologia & TI</h3><p>Websites, software de gestão, informática, redes e soluções digitais para negócios.</p></div></article>
+
+<!-- 4 -->
+<article class="card"><div class="visual"><svg viewBox="0 0 180 140"><path d="M25 100V45l65-25 65 25v55l-65 25z" fill="#0756a5"/><circle cx="90" cy="70" r="28" fill="#fff"/><circle cx="90" cy="70" r="15" fill="#13a8d8"/><path d="M90 20v18M25 100l30-12M155 100l-30-12" stroke="#f4c400" stroke-width="8"/></svg></div><div class="card-body"><h3>Segurança Eletrónica</h3><p>CCTV, videomonitoramento, GPS e soluções de segurança para instalações e operações.</p></div></article>
+
+<!-- 5 -->
+<article class="card"><div class="visual"><svg viewBox="0 0 180 140"><path d="M55 25h70v90H55z" fill="#fff" stroke="#0756a5" stroke-width="7"/><path d="M72 25v-8h36v8M72 50h36M72 70h36M72 90h25" stroke="#159447" stroke-width="8" stroke-linecap="round"/><path d="M35 42h15M35 67h15M35 92h15" stroke="#f4c400" stroke-width="8"/></svg></div><div class="card-body"><h3>EPI: Venda & Personalização</h3><p>Venda e personalização de Equipamentos de Proteção Individual para equipas e empresas.</p></div></article>
+
+<!-- 6 -->
+<article class="card"><div class="visual"><svg viewBox="0 0 180 140"><path d="M90 22l18 32 37 7-27 26 6 36-34-17-34 17 6-36-27-26 37-7z" fill="#f4c400"/><path d="M55 100h70" stroke="#0756a5" stroke-width="10" stroke-linecap="round"/></svg></div><div class="card-body"><h3>Design & Marketing</h3><p>Logotipos, identidade visual, materiais gráficos, publicidade e presença digital.</p></div></article>
+
+<!-- 7 -->
+<article class="card"><div class="visual"><svg viewBox="0 0 180 140"><path d="M28 105h124M40 105V65h100v40M52 65V45h76v20M65 45V30h50v15" fill="none" stroke="#0756a5" stroke-width="10" stroke-linejoin="round"/><path d="M65 82h50" stroke="#159447" stroke-width="10"/><circle cx="145" cy="35" r="14" fill="#f4c400"/></svg></div><div class="card-body"><h3>Mobiliário</h3><p>Venda e intermediação de mobiliário e soluções para espaços residenciais e empresariais.</p></div></article>
+
+<!-- 8 -->
+<article class="card"><div class="visual"><svg viewBox="0 0 180 140"><path d="M25 112V63l65-38 65 38v49z" fill="#159447"/><path d="M68 112V78h44v34M55 65h20M105 65h20" stroke="#fff" stroke-width="9"/><path d="M35 118h110" stroke="#f4c400" stroke-width="9" stroke-linecap="round"/></svg></div><div class="card-body"><h3>Imobiliário</h3><p>Intermediação de imóveis e apoio na procura de soluções imobiliárias.</p></div></article>
+
+<!-- 9 -->
+<article class="card"><div class="visual"><svg viewBox="0 0 180 140"><rect x="38" y="25" width="104" height="90" rx="12" fill="#0756a5"/><path d="M65 58h50M65 78h50M65 98h30" stroke="#fff" stroke-width="9" stroke-linecap="round"/><circle cx="125" cy="105" r="20" fill="#f4c400"/><path d="M116 105l7 7 13-15" fill="none" stroke="#10243b" stroke-width="6"/></svg></div><div class="card-body"><h3>Serviços Empresariais</h3><p>Apoio operacional, soluções administrativas e serviços personalizados para empresas.</p></div></article>
+
+</div></div></section>
+
+<section><div class="container"><div class="section-head"><h2>Fale connosco</h2><p>Escolha o canal mais conveniente para solicitar informações ou um orçamento.</p></div><div class="contact-grid">
+<div class="contact-card"><h3>📞 Telefones</h3><p>938 330 653<br>933 194 522<br>956 349 202</p></div>
+<div class="contact-card"><h3>✉️ E-mail</h3><p><a href="mailto:viteculeca@gmail.com">viteculeca@gmail.com</a></p></div>
+<div class="contact-card"><h3>📍 Endereço</h3><p>Vila de Viana, Rua 11 de Novembro<br>Luanda, Angola</p></div>
+</div></div></section>
+
+<section class="cta" id="contacto"><div class="container cta-box"><div><h2>Tem um projeto em mente?</h2><p>Conte-nos o que precisa. A nossa equipa está pronta para encontrar uma solução.</p></div><a class="btn primary" href="https://wa.me/244938330653?text=Olá%20Vite%20%26%20Culeca!%20Quero%20solicitar%20um%20orçamento." target="_blank">Solicitar orçamento</a></div></section>
+</main>
+<footer><div class="container"><div class="footer-brand">VITE <span>&</span> CULECA</div><div>Comércio Geral e Prestação de Serviços, Lda. • NIF 5002660180</div><div>© 2026 Vite & Culeca. Todos os direitos reservados.</div></div></footer>
+<a class="float-wa" href="https://wa.me/244938330653" target="_blank" aria-label="WhatsApp">◔</a>
+<script>
+function toggleMenu(){const n=document.getElementById('nav');n.style.display=n.style.display==='flex'?'none':'flex';n.style.position='absolute';n.style.top='76px';n.style.right='20px';n.style.flexDirection='column';n.style.background='#fff';n.style.padding='18px 22px';n.style.borderRadius='14px';n.style.boxShadow='0 10px 30px #0002'}
+</script>
+</body>
+</html>
